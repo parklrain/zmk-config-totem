@@ -349,7 +349,7 @@
               &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
               &kp LWIN      &kp LALT      &kp LSHIFT    &kp LCTRL     &bt BT_CLR_ALL    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &out OUT_TOG  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &mkp MB5   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &bootloader
-                                          &trans        &trans        &trans            &mkp LCLK  &mkp RCLK       &mkp MCLK
+                                          &reset        &trans        &trans            &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
     };
