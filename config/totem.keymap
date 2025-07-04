@@ -156,7 +156,7 @@
 
         combo_cut {
             bindings = <&kp LC(X)>;
-            key-positions = <21 22>;
+            key-positions = <22 24>;
             timeout-ms = <50>;
             layers = <0>;
             require-prior-idle-ms = <100>;
@@ -368,6 +368,22 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0 1 2 3>;
+        };
+
+        combo_undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <22 21>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
+        };
+
+        combo_redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <24 25>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <100>;
+            layers = <0>;
         };
     };
 
