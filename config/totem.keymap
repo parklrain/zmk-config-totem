@@ -500,7 +500,7 @@
             bindings = <
         &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)       &kp LC(I)       &kp LC(O)     &kp LC(P)
         &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &mkp MB5   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &mkp MB5   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans
                               &trans     &trans     &trans       &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
