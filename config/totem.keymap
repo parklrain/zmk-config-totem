@@ -73,7 +73,7 @@
             bindings = <&kp LSHIFT>;
             key-positions = <10 11>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 2 3 1>;
             require-prior-idle-ms = <100>;
         };
 
@@ -113,7 +113,7 @@
             bindings = <&kp RET>;
             key-positions = <19 31>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 1 2 3>;
             require-prior-idle-ms = <100>;
         };
 
@@ -129,7 +129,7 @@
             bindings = <&kp RSHIFT>;
             key-positions = <19 18>;
             timeout-ms = <50>;
-            layers = <0>;
+            layers = <0 1>;
             require-prior-idle-ms = <100>;
         };
 
@@ -242,7 +242,7 @@
             key-positions = <11 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 2 3>;
         };
 
         combo_lalt {
@@ -250,7 +250,7 @@
             key-positions = <12 13>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 2 3>;
         };
 
         combo_lgui {
@@ -258,7 +258,7 @@
             key-positions = <13 14>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 2 3>;
         };
 
         combo_rgui {
@@ -266,7 +266,7 @@
             key-positions = <15 16>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_ralt {
@@ -274,7 +274,7 @@
             key-positions = <16 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_rctrl {
@@ -290,7 +290,7 @@
             key-positions = <10 11 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         combo_lshift_lalt {
@@ -298,7 +298,7 @@
             key-positions = <10 11 13>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         combo_lctrl_lalt {
@@ -306,7 +306,7 @@
             key-positions = <11 13 12>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         combo_lctrl_lgui {
@@ -314,7 +314,7 @@
             key-positions = <11 13 12 10>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         combo_rshift_rctrl {
@@ -322,7 +322,7 @@
             key-positions = <19 18 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_rshift_ralt {
@@ -330,7 +330,7 @@
             key-positions = <16 18 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_rctrl_ralt {
@@ -338,7 +338,7 @@
             key-positions = <16 17 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_rctrl_rgui {
@@ -346,7 +346,7 @@
             key-positions = <16 17 18 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1>;
         };
 
         combo_ko_en {
@@ -354,7 +354,7 @@
             key-positions = <27 28>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
 
         combo_hanja {
@@ -362,7 +362,7 @@
             key-positions = <28 29>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
-            layers = <0>;
+            layers = <0 1 2 3>;
         };
     };
 
@@ -453,10 +453,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp LEFT_BRACE          &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp HOME   &kp END         &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
-            &hm LWIN DOUBLE_QUOTES  &hm LALT DOLLAR  &hm LSHIFT PERCENT    &hm LCTRL CARET        &kp PLUS           &kp PG_UP  &kp DOWN        &kp DOWN         &kp UP          &kp RIGHT
-&kp LSHIFT  &kp TILDE               &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &kp PG_DN  &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP    &msc SCRL_RIGHT  &kp RSHIFT
-                                                     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans     &trans          &trans
+            &kp LEFT_BRACE            &kp AMPERSAND     &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp HOME   &kp END         &kp PRINTSCREEN  &kp SCROLLLOCK  &kp PAUSE_BREAK
+            &hm LSHIFT DOUBLE_QUOTES  &hm LCTRL DOLLAR  &hm LALT PERCENT      &hm LWIN CARET         &kp PLUS           &kp PG_UP  &kp DOWN        &kp DOWN         &kp UP          &kp RIGHT
+&kp LSHIFT  &kp TILDE                 &kp EXCLAMATION   &kp AT_SIGN           &kp HASH               &kp PIPE           &kp PG_DN  &msc SCRL_LEFT  &msc SCRL_DOWN   &msc SCRL_UP    &msc SCRL_RIGHT  &kp RSHIFT
+                                                        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans     &trans          &trans
             >;
         };
 
@@ -478,7 +478,7 @@
 
             bindings = <
               &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR        &kp LC(Y)  &kp LC(V)       &kp LC(C)       &kp LC(X)     &kp LC(Z)
-              &kp LWIN      &kp LALT      &kp LSHIFT    &kp LCTRL     &bt BT_CLR_ALL    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
+              &kp LSHIFT    &kp LCTRL     &kp LALT      &kp LWIN      &bt BT_CLR_ALL    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT
 &out OUT_TOG  &kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LC(Y)         &mkp MB5   &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &bootloader
                                           &sys_reset    &trans        &trans            &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
