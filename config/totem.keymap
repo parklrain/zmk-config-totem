@@ -421,6 +421,20 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
+
+        tm: tab_mouse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAB_MOUSE";
+            #binding-cells = <0>;
+            bindings = <&lt 3 TAB>, <&kp TAB>, <&tog 3>;
+        };
+
+        dm: delete_mouse {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DELETE_MOUSE";
+            #binding-cells = <0>;
+            bindings = <&lt 3 DEL>, <&kp DEL>, <&tog 3>;
+        };
     };
 
     keymap {
@@ -445,10 +459,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y        &kp U       &kp I            &kp O    &kp P
-            &kp A  &kp S  &kp D      &kp F        &kp G        &kp H        &kp J       &kp K            &kp L    &kp SEMI
-&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N        &hm RALT M  &hm RCTRL COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                          &lt 1 ESC  &lt 2 SPACE  &lt 3 TAB    &lt 1 ENTER  &lt 2 BSPC  &lt 3 DEL
+            &kp Q  &kp W  &kp E      &kp R        &kp T    &kp Y        &kp U       &kp I            &kp O    &kp P
+            &kp A  &kp S  &kp D      &kp F        &kp G    &kp H        &kp J       &kp K            &kp L    &kp SEMI
+&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V        &kp B    &kp N        &hm RALT M  &hm RCTRL COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                          &lt 1 ESC  &lt 2 SPACE  &tm      &lt 1 ENTER  &lt 2 BSPC  &lt 3 DEL
             >;
         };
 
@@ -480,10 +494,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &msc SCRL_UP     &msc SCRL_LEFT  &kp SCROLLLOCK  &msc SCRL_LEFT  &kp PAUSE_BREAK
-            &kp DOUBLE_QUOTES  &kp DLLR         &kp PRCNT             &kp CARET              &kp PLUS           &msc SCRL_DOWN   &kp LEFT        &kp UP          &kp UP          &kp PG_UP
-&kp LSHIFT  &kp TILDE          &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &kp PRINTSCREEN  &kp HOME        &kp DOWN        &kp END         &kp PG_DN        &kp RSHIFT
-                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans           &trans          &trans
+            &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp HOME   &kp END         &kp PRINTSCREEN  &kp SCROLLLOCK   &kp PAUSE_BREAK
+            &kp DOUBLE_QUOTES  &kp DLLR         &kp PRCNT             &kp CARET              &kp PLUS           &kp PG_UP  &kp LEFT        &kp UP           &kp UP           &msc SCRL_DOWN
+&kp LSHIFT  &kp TILDE          &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &kp PG_DN  &msc SCRL_LEFT  &kp DOWN         &msc SCRL_RIGHT  &kp PG_DN        &kp RSHIFT
+                                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans     &trans          &trans
             >;
         };
 
@@ -504,10 +518,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &msc SCRL_UP    &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &trans
-        &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &mkp MB4
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &mkp MCLK       &mkp LCLK       &mmv MOVE_DOWN  &mkp RCLK        &mkp MB5  &trans
-                              &trans     &trans     &trans       &mkp LCLK       &mkp RCLK       &mkp MCLK
+        &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)    &trans     &trans          &trans          &trans           &trans
+        &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)    &mkp MB5   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans
+                              &trans     &trans     &trans       &mkp LCLK  &mkp RCLK       &mkp MCLK
             >;
         };
 
