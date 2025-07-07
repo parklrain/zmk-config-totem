@@ -426,18 +426,29 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAB_MOUSE";
             #binding-cells = <0>;
-            bindings = <&lt 3 TAB>, <&kp TAB>, <&tog 3>;
+            bindings = <&lt 3 TAB>, <&tt TAB 3>;
 
-            tapping-term-ms = <250>;
+            tapping-term-ms = <200>;
         };
 
         dm: delete_mouse {
             compatible = "zmk,behavior-tap-dance";
             label = "DELETE_MOUSE";
             #binding-cells = <0>;
-            bindings = <&lt 3 DEL>, <&kp DEL>, <&tog 3>;
+            bindings = <&lt 3 DEL>, <&tt DEL 3>;
 
+            tapping-term-ms = <200>;
+        };
+
+        tt: toggle_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TOGGLE_TAP";
+            bindings = <&kp>, <&tog>;
+
+            #binding-cells = <2>;
+            quick-tap-ms = <200>;
             tapping-term-ms = <250>;
+            flavor = "tap-preferred";
         };
     };
 
