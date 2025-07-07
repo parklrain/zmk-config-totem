@@ -385,6 +385,11 @@
             require-prior-idle-ms = <100>;
             layers = <0>;
         };
+
+        combo_mse_toggle {
+            bindings = <&tog 3>;
+            key-positions = <33 34>;
+        };
     };
 
     macros {
