@@ -386,9 +386,15 @@
             layers = <0>;
         };
 
-        combo_mse_toggle {
+        combo_mse_tab {
             bindings = <&tog 3>;
             key-positions = <33 34>;
+            layers = <0 3>;
+        };
+
+        combo_mse_del {
+            bindings = <&tog 3>;
+            key-positions = <35 36>;
             layers = <0 3>;
         };
     };
@@ -421,35 +427,6 @@
             quick-tap-ms = <200>;
             flavor = "tap-preferred";
         };
-
-        tm: tab_mouse {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAB_MOUSE";
-            #binding-cells = <0>;
-            bindings = <&lt 3 TAB>, <&tt TAB 3>;
-
-            tapping-term-ms = <200>;
-        };
-
-        dm: delete_mouse {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DELETE_MOUSE";
-            #binding-cells = <0>;
-            bindings = <&lt 3 DEL>, <&tt DEL 3>;
-
-            tapping-term-ms = <200>;
-        };
-
-        tt: toggle_tap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TOGGLE_TAP";
-            bindings = <&kp>, <&tog>;
-
-            #binding-cells = <2>;
-            quick-tap-ms = <200>;
-            tapping-term-ms = <250>;
-            flavor = "tap-preferred";
-        };
     };
 
     keymap {
@@ -474,10 +451,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-            &kp Q  &kp W  &kp E      &kp R        &kp T    &kp Y        &kp U       &kp I            &kp O    &kp P
-            &kp A  &kp S  &kp D      &kp F        &kp G    &kp H        &kp J       &kp K            &kp L    &kp SEMI
-&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V        &kp B    &kp N        &hm RALT M  &hm RCTRL COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
-                          &lt 1 ESC  &lt 2 SPACE  &tm      &lt 1 ENTER  &lt 2 BSPC  &dm
+            &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y        &kp U       &kp I            &kp O    &kp P
+            &kp A  &kp S  &kp D      &kp F        &kp G        &kp H        &kp J       &kp K            &kp L    &kp SEMI
+&kp LSHIFT  &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N        &hm RALT M  &hm RCTRL COMMA  &kp DOT  &kp FSLH  &kp RSHIFT
+                          &lt 1 ESC  &lt 2 SPACE  &lt 3 TAB    &lt 1 ENTER  &lt 2 BSPC  &lt 3 DEL
             >;
         };
 
