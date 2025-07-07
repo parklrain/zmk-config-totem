@@ -487,7 +487,7 @@
 
             bindings = <
             &kp LEFT_BRACE     &kp AMPERSAND    &kp ASTERISK          &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &kp HOME   &kp END         &kp PRINTSCREEN  &kp SCROLLLOCK   &kp PAUSE_BREAK
-            &kp DOUBLE_QUOTES  &kp DLLR         &kp PRCNT             &kp CARET              &kp PLUS           &kp PG_UP  &kp LEFT        &kp UP           &kp UP           &msc SCRL_DOWN
+            &kp DOUBLE_QUOTES  &kp DLLR         &kp PRCNT             &kp CARET              &kp PLUS           &kp PG_UP  &kp LEFT        &kp UP           &kp RIGHT        &msc SCRL_DOWN
 &kp LSHIFT  &kp TILDE          &kp EXCLAMATION  &kp AT_SIGN           &kp HASH               &kp PIPE           &kp PG_DN  &msc SCRL_LEFT  &kp DOWN         &msc SCRL_RIGHT  &kp PG_DN        &kp RSHIFT
                                                 &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &trans     &trans          &trans
             >;
