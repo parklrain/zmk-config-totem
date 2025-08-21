@@ -356,7 +356,7 @@
 
         combo_ko_en {
             bindings = <&kp RALT>;
-            key-positions = <27 26>;
+            key-positions = <16 18>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
@@ -364,7 +364,7 @@
 
         combo_hanja {
             bindings = <&kp RCTRL>;
-            key-positions = <28 26>;
+            key-positions = <17 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <0>;
