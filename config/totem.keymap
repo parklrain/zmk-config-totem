@@ -434,10 +434,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &trans  &kp F7  &kp F8  &kp F9  &kp F12    &mkp MCLK  &kp HOME        &kp END         &kp PG_UP        &kp PG_DN
-        &trans  &kp F4  &kp F5  &kp F6  &kp F11    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP
-&trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10    &mkp MB5   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans
-                        &trans  &trans  &trans     &mkp LCLK  &mkp RCLK       &trans
+        &trans  &kp F7  &kp F8  &kp F9    &kp F12    &mkp MCLK  &kp HOME        &kp END         &kp PG_UP        &kp PG_DN
+        &trans  &kp F4  &kp F5  &lt 3 F6  &kp F11    &mkp MB4   &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP
+&trans  &trans  &kp F1  &kp F2  &kp F3    &kp F10    &mkp MB5   &msc SCRL_LEFT  &mmv MOVE_DOWN  &msc SCRL_RIGHT  &msc SCRL_DOWN  &trans
+                        &trans  &trans    &trans     &mkp LCLK  &mkp RCLK       &trans
             >;
         };
 
