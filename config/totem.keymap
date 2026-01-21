@@ -136,7 +136,7 @@
 
         combo_enter {
             bindings = <&kp ENTER>;
-            key-positions = <21 22>;
+            key-positions = <25 24>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
             layers = <1>;
@@ -158,8 +158,8 @@
             layers = <1>;
         };
 
-        combo_tab {
-            bindings = <&kp TAB>;
+        combo_caps {
+            bindings = <&kp CLCK>;
             key-positions = <13 11>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -385,8 +385,8 @@
         num_layer {
             bindings = <
             &kp LEFT_BRACKET  &kp N7  &kp N8      &kp N9  &kp RIGHT_BRACKET    &kp HOME   &kp END   &kp INS   &kp DEL    &kp BSPC
-            &kp SQT           &kp N4  &kp N5      &kp N6  &kp EQUAL            &kp PLUS   &kp LEFT  &kp UP    &kp RIGHT  &kp ENTER
-&kp LSHIFT  &kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BACKSLASH        &kp MINUS  &trans    &kp DOWN  &kp ASTRK  &kp SLASH  &kp RSHIFT
+            &kp SQT           &kp N4  &kp N5      &kp N6  &kp EQUAL            &kp PG_UP  &kp LEFT  &kp UP    &kp RIGHT  &kp STAR
+&kp LSHIFT  &kp GRAVE         &kp N1  &kp N2      &kp N3  &kp BACKSLASH        &kp PG_DN  &kp PLUS  &kp DOWN  &kp MINUS  &kp SLASH  &kp RSHIFT
                                       &kp PERIOD  &kp N0  &kp MINUS            &trans     &trans    &trans
             >;
 
